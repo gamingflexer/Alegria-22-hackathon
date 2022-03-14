@@ -4,8 +4,8 @@
 
 - Activate the enviroment 
 
-'''pip install -u requirment.txt'''
+```pip install -u requirment.txt```
 
-'''python app.py'''
+```python app.py```
 
 ## ScreenShoots & Demo link
