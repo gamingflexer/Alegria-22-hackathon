@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload resume here</title>
+  <link rel="stylesheet" href="../static/upload.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>File Uploader JavaScript</header>
+    <form  action= "/upload" method="post" enctype="multipart/form-data"  >
+      <input class="file-input" type="file" name="fileInput" id="fileInput" class="form-control" multiple aria-hidden="false" >
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File to Upload</p>
+      <input type="submit" name="submit" class="btn btn-success" value="UPLOAD"/>
+      <div class="cbutton">
+        <a href="/delete">Clean</a>
+        </div>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+    
+  </div>
+  
+
+  <script>
+    $(document).ready(function(){
+     // File type validation
+        $("#fileInput").change(function(){
+            var fileLength = this.files.length;
+            var match= ["image/jpeg","image/png","image/jpg", "application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/rtf","application/vnd.oasis.opendocum", "text/html","application/zip","text/plain"];
+            var i;
+            for(i = 0; i < fileLength; i++){ 
+                var file = this.files[i];
+                var acceptfile = file.type;
+                if(!((acceptfile==match[0]) || (acceptfile==match[1]) || (acceptfile==match[2]) || (acceptfile==match[3]) || (acceptfile==match[4]) || (acceptfile==match[5]) || (acceptfile==match[6]) || (acceptfile==match[7]) || (acceptfile==match[8]) || (acceptfile==match[9]) || (acceptfile==match[10] || (acceptfile==match[11])))){
+                    alert('Please select a valid image file (JPEG/JPG/PNG/docx/doc/pdf).');
+                    $("#fileInput").val('');
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    
+
+</body>
+</html>

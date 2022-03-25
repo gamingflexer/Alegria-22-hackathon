@@ -1,0 +1,136 @@
+
+@import url("https://tonts. goog-capis:com/055family=Poppins:400,700| Open+Sans: 400") ;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 62.6%;
+}
+body{
+   
+    
+    font-size: 'Montserrat';
+    height: 100vh ;
+    background: linear-gradient(to left,rgba(224,224,224),rgba(169,169,169,1));
+    background-position: bottom ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+p{
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+}
+
+
+ p{
+     margin-top: 1rem;
+     font-size: 3.5rem;
+    text-transform:uppercase ;
+    
+    text-align: center;
+    position: relative;
+    
+}
+
+ul li .menu .menu-item .con a{
+    display: inline-block;
+}
+
+.menu{
+    position: fixed;
+    float:left;
+    border: 0.4rem solid;
+    border-radius: 15px;
+    margin-top: 4.0rem;
+    left: -250px;
+    height: 42.2rem;
+    width: 19rem;
+    background-color: #808080;
+    transition: all .7s ease;
+} 
+
+a{
+    font-size: 2rem;
+    color:white;
+    line-height: 350%;
+    
+}
+
+ a i{
+     margin-left: 3rem;
+    margin-right: 16px;
+    color: white;
+}
+
+
+
+
+h2{
+    font-size: 3.1rem;
+    letter-spacing: 0.25rem;
+}
+
+.con{
+    position: absolute;
+    text-align: center;
+    float: right;
+    margin-top: 35rem;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.btn{
+    display: inline-block;
+    color: blue;
+    font-weight: 500;
+    padding: 0.1em 2.3em;
+    margin: 0.8em 0;
+    background-color: white;
+    border-radius: 50px;
+}
+li {
+   transition: .4s;
+  
+}
+#check{
+    display: none;
+}
+label #icon,label #cancel{
+position: absolute;
+cursor: pointer;
+
+}
+label #icon{
+    left: 40px;
+    top:90px;
+    font-size: 35px;
+    color: white;
+}
+label #cancel{
+    z-index: 1111;
+    left: -150px;
+    top: 100px;
+    color: white;
+    font-size:30px;
+    transition: all 0.7s ease;
+}
+#check:checked ~ .menu{
+    left: 0px;
+}
+#check:checked ~ label #cancel{
+    left: 150px;
+}
+
