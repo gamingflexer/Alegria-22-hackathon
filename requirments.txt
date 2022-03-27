@@ -1,0 +1,59 @@
+#mysql
+#chromedriver - loc
+#pip install them
+
+#ml
+tensorflow
+pandas
+numpy
+
+
+#ocr
+tika
+
+#file conversion
+selenium
+BeautifulSoup
+fitz
+opencv-python
+fpdf
+docx2pdf
+pytesseract
+Pillow
+pdfkit
+textract
+fpdf
+nltk 
+torch
+pyap
+nameparser
+spacy==2.2.4
+pytorch_pretrained_bert
+
+#db conn
+mysql
+flask_mysqldb
+mysql.connector
+flask_sqlalchemy
+flask
+
+
+date_extractor
+PyMuPDF 
+fitz
+
+nltk.download('maxent_ne_chunker')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('words')
+nltk.download('stopwords')
+
+
+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
+
+python -m spacy download en_core_web_sm
+python -m nltk.downloader words
+python -m nltk.downloader stopwords
+pip install pytest
+pip install coverage
+pip install codecov
+pip install flake8
