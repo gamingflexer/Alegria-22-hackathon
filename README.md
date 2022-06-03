@@ -6,7 +6,7 @@
 
 ```pip install -u requirment.txt```
 
-```python app.py```
+```python binary.py```
 
 ## ScreenShoots & Demo link
 
